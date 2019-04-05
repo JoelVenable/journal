@@ -1,0 +1,102 @@
+/*
+*************
+***  Universal Element Selectors
+*************
+*/
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('../img/background.jpg');
+  background-repeat: repeat;
+  background-size: 300px;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  padding-bottom: .7rem;
+}
+/*
+*************
+***  Universal Flexbox rules
+*************
+*/
+.flex-container {
+  display: flex;
+}
+
+
+
+
+/*
+*************
+***  Header Section
+*************
+*/
+
+header {
+  flex-direction: column-reverse;
+  background-color: rgb(9, 9, 114);
+  color: white;
+  box-shadow: 0 0 15px rgb(0,0,0);
+}
+
+nav ul {
+  justify-content: space-around;
+  list-style: none;
+}
+
+
+/*
+*************
+***  Main Section
+*************
+*/
+
+
+.blogpost {
+  background-color: white;
+  width: 80%;
+  margin: 20px auto;
+  box-shadow: 10px 10px 10px black;
+}
+
+.blogpost__heading {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid goldenrod;
+}
+
+.blogpost__image img {
+  width: 100%;
+}
+
+
+
+
+
+/*
+*************
+***  Media Queries
+*************
+*/
+
+
+@media screen and (min-width: 480px) {
+
+}
+
+@media screen and (min-width: 760px) {
+
+}
+
+@media screen and (min-width: 900px) {
+
+}
