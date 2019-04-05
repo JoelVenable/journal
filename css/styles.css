@@ -21,7 +21,17 @@ h1 {
 }
 
 p {
-  padding-bottom: .7rem;
+  padding: .1rem .5rem .7rem .5rem;
+}
+
+a {
+  text-decoration: none;
+  transition: all .4s;
+  color: darkcyan;
+}
+
+a:hover {
+  border-bottom: 1px solid darkcyan;
 }
 /*
 *************
@@ -66,6 +76,8 @@ nav ul {
   width: 80%;
   margin: 20px auto;
   box-shadow: 10px 10px 10px black;
+  max-width: 400px;
+  margin: 20px;
 }
 
 .blogpost__heading {
@@ -78,7 +90,17 @@ nav ul {
   width: 100%;
 }
 
+/*
+*************
+***  Footer
+*************
+*/
 
+
+footer {
+  background-color: rgb(9, 9, 114);
+  color: white;
+}
 
 
 
