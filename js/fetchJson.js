@@ -3,14 +3,7 @@ const request = fetchJsonRequest('../db/data.json');
 
 
 
-request.onload = function () {
-  var blogPostObj = request.response;
-  blogPostObj.forEach(post => {
-    let div = addHTMLElement('div', main, '', ['blogpost']);
-    addHTMLElement('h3', div, post.postTitle);
-  })
 
-}
 
 
 

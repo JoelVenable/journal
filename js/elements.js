@@ -13,10 +13,8 @@ function addHTMLElement(htmlTag, parent, htmlContent, classArray) {
 
 function addHTMLImage(parent, imageObject) {
   image = document.createElement('img');
-  let src = image.createAttribute('src');
-  src.value = imageObject.url;
-  let alt = image.createAttribute('alt');
-  alt.value = imageObject.alt;
+  image.src = imageObject.url;
+  image.alt = imageObject.alt;
   parent.appendChild(image);
   return image;
 }
