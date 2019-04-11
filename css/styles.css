@@ -11,8 +11,8 @@
 }
 
 body {
-  background-image: url('../img/background.jpg');
-  background-repeat: repeat;
+  background-image: url('../img/background.jpg'), rgba(255,255,255,0.4);
+  background-repeat: repeat, repeat;
   background-size: 300px;
 }
 
@@ -33,6 +33,7 @@ a {
 a:hover {
   border-bottom: 1px solid darkcyan;
 }
+
 /*
 *************
 ***  Universal Flexbox rules
@@ -73,10 +74,8 @@ nav ul {
 
 .blogpost {
   background-color: white;
-  width: 80%;
   margin: 20px auto;
   box-shadow: 10px 10px 10px black;
-  max-width: 400px;
   margin: 20px;
 }
 
@@ -116,7 +115,9 @@ footer {
 }
 
 @media screen and (min-width: 760px) {
-
+  main {
+    display: flex;
+  }
 }
 
 @media screen and (min-width: 900px) {
