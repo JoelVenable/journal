@@ -11,7 +11,7 @@
 }
 
 body {
-  background-image: url('../img/background.jpg'), rgba(255,255,255,0.4);
+  background-image: url('../img/background.jpg');
   background-repeat: repeat, repeat;
   background-size: 300px;
 }
