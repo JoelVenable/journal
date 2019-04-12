@@ -11,8 +11,8 @@
 }
 
 body {
-  background-image: url('../img/background.jpg');
-  background-repeat: repeat;
+  background-image: url('../img/background.jpg'), rgba(255,255,255,0.4);
+  background-repeat: repeat, repeat;
   background-size: 300px;
 }
 
@@ -21,8 +21,19 @@ h1 {
 }
 
 p {
-  padding-bottom: .7rem;
+  padding: .1rem .5rem .7rem .5rem;
 }
+
+a {
+  text-decoration: none;
+  transition: all .4s;
+  color: darkcyan;
+}
+
+a:hover {
+  border-bottom: 1px solid darkcyan;
+}
+
 /*
 *************
 ***  Universal Flexbox rules
@@ -63,9 +74,9 @@ nav ul {
 
 .blogpost {
   background-color: white;
-  width: 80%;
   margin: 20px auto;
   box-shadow: 10px 10px 10px black;
+  margin: 20px;
 }
 
 .blogpost__heading {
@@ -78,7 +89,17 @@ nav ul {
   width: 100%;
 }
 
+/*
+*************
+***  Footer
+*************
+*/
 
+
+footer {
+  background-color: rgb(9, 9, 114);
+  color: white;
+}
 
 
 
@@ -94,7 +115,9 @@ nav ul {
 }
 
 @media screen and (min-width: 760px) {
-
+  main {
+    display: flex;
+  }
 }
 
 @media screen and (min-width: 900px) {

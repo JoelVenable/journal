@@ -1,0 +1,28 @@
+[{
+    "postTitle": "I had an Amazing Epiphany!",
+    "postImg": {
+      "url": "img/big-bird.jpg",
+      "alt": "Big Bird"
+    },
+    "content": "Spicy jalapeno bacon ipsum dolor amet jerky est dolor, ex turducken aute ut. In anim esse sirloin alcatra ullamco dolore tri-tip strip steak meatloaf salami fatback.",
+    "link": "More after <a href='#'>the jump</a>..."
+  },
+  {
+    "postTitle": "I had an Amazing Epiphany!",
+    "postImg": {
+      "url": "img/big-bird.jpg",
+      "alt": "Big Bird"
+    },
+    "content": "Spicy jalapeno bacon ipsum dolor amet jerky est dolor, ex turducken aute ut. In anim esse sirloin alcatra ullamco dolore tri-tip strip steak meatloaf salami fatback.",
+    "link": "More after <a href='#'>the jump</a>..."
+  },
+  {
+    "postTitle": "I had an Amazing Epiphany!",
+    "postImg": {
+      "url": "img/big-bird.jpg",
+      "alt": "Big Bird"
+    },
+    "content": "Spicy jalapeno bacon ipsum dolor amet jerky est dolor, ex turducken aute ut. In anim esse sirloin alcatra ullamco dolore tri-tip strip steak meatloaf salami fatback.",
+    "link": "More after <a href='#'>the jump</a>..."
+  }
+]
