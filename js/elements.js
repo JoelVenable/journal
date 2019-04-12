@@ -22,17 +22,17 @@ const socialItems = [{
       "title": "Home"
     },
     {
-      "href": "blog.html",
-      "title": "Blog"
-    },
-    {
-      "href": "tools.html",
-      "title": "Helpful Tools"
-    },
-    {
-      "href": "portfolio.html",
-      "title": "Portfolio"
+      "href": "form.html",
+      "title": "Add a Journal Entry"
     }
+    // {
+    //   "href": "tools.html",
+    //   "title": "Helpful Tools"
+    // },
+    // {
+    //   "href": "portfolio.html",
+    //   "title": "Portfolio"
+    // }
   ];
 
 
@@ -113,4 +113,6 @@ function buildBlogPost(post) {
 }
 
 
+function buildInputForm() {
 
+}
