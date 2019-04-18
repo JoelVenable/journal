@@ -1,44 +1,12 @@
-const body = document.querySelector('body');
+
 const flexbox = 'flex-container';
-const socialItems = [{
-      "href": "https://www.facebook.com/carlossantana/",
-      "iconName": "logo-facebook"
-    },
-    {
-      "href": "https://twitter.com/santanacarlos?lang=en",
-      "iconName": "logo-twitter"
-    },
-    {
-      "href": "https://www.santana.com/",
-      "iconName": "cloudy"
-    },
-    {
-      "href": "https://www.youtube.com/user/santanaofficial",
-      "iconName": "logo-youtube"
-    }
-  ],
-  navItems = [{
-      "href": "/",
-      "title": "Home"
-    },
-    {
-      "href": "form.html",
-      "title": "Add a Journal Entry"
-    }
-    // {
-    //   "href": "tools.html",
-    //   "title": "Helpful Tools"
-    // },
-    // {
-    //   "href": "portfolio.html",
-    //   "title": "Portfolio"
-    // }
-  ];
+
+  
 
 
 
 function addHTMLElement(htmlTag, parent, htmlContent, classArray) {
-  htmlElement = document.createElement(htmlTag);
+  const htmlElement = document.createElement(htmlTag);
   htmlElement.textContent = htmlContent;
   if (classArray !== undefined) {
     classArray.forEach(item => {
@@ -59,8 +27,16 @@ function addHTMLImage(parent, imageObject) {
 }
 
 
-function buildHeader() {
-  let header = addHTMLElement('header', body, '', [flexbox]);
+function buildHeader(parent) {
+  let navItems = [{
+    "href": "/",
+    "title": "Home"
+  },
+  {
+    "href": "form.html",
+    "title": "Add a Journal Entry"
+  }];
+  let header = addHTMLElement('header', parent, '', [flexbox]);
   addHTMLElement('h1', header, "Joel's Journal");
   let nav = addHTMLElement('nav', header);
   let ul = addHTMLElement('ul', nav, '', [flexbox]);
@@ -71,15 +47,35 @@ function buildHeader() {
 }
 
 
-function buildFooter() {
-  let footer = addHTMLElement('footer', body);
+function buildFooter(parent) {
+  const socialItems = [{
+    "href": "https://www.facebook.com/joel.venable",
+    "iconName": "logo-facebook"
+  },
+  {
+    "href": "https://twitter.com/santanacarlos?lang=en",
+    "iconName": "logo-twitter"
+  },
+  {
+    "href": "https://www.joelvenable.com/",
+    "iconName": "cloudy"
+  },
+  {
+    "href": "https://www.youtube.com/user/santanaofficial",
+    "iconName": "logo-youtube"
+  }
+  ];
+  let footer = addHTMLElement('footer', parent);
   addHTMLElement('h4', footer, 'Connect with Joel:');
   let ul = addHTMLElement('ul', footer, );
   socialItems.forEach(item => {
     addSocialLink(item, ul);
-  })
+  });
+  addLink({
+    href: "https://www.freepik.com/free-photos-vectors/background",
+    title: "Background by freepik"
+  },footer);
 }
-
 
 function addLink(linkObject, parent) {
   var link = document.createElement('a');
@@ -102,13 +98,15 @@ function addSocialLink(linkObject, parent) {
 
 
 function buildBlogPost(post) {
-  let div = addHTMLElement('div', main, '', ['blogpost']);
+  let fragment = document.createDocumentFragment()
+  let div = addHTMLElement('div', fragment, '', ['blogpost']);
   div.id = post.id;
   let heading = addHTMLElement('section', div, '', ['blogpost__heading']);
   addHTMLElement('h3', heading, post.postTitle);
   let imgDiv = addHTMLElement('div', div, '', ['blogpost__image']);
   addHTMLImage(imgDiv, post.postImg);
   addHTMLElement('p', div, post.content)
+  document.querySelector('main').appendChild(fragment)
 
 }
 
